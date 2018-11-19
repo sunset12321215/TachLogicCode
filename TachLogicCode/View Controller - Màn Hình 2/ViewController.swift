@@ -17,5 +17,14 @@ class ViewController: UIViewController {
         guard let vc = storyboard.instantiateViewController(withIdentifier: "TableViewController") as? TableViewController else { return }
         
         present(vc, animated: true, completion: nil)
+        
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("Đây là Branch để Fix lỗi từ Branch Test")
+        
     }
 }
